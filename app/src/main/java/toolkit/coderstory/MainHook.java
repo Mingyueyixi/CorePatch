@@ -29,6 +29,7 @@ public class MainHook implements IXposedHookLoadPackage, IXposedHookZygoteInit {
                     new CorePatchForR().handleLoadPackage(lpparam);
                     break;
                 case Build.VERSION_CODES.Q: // 29
+                case Build.VERSION_CODES.P:
                     new CorePatchForQ().handleLoadPackage(lpparam);
                     break;
                 default:
